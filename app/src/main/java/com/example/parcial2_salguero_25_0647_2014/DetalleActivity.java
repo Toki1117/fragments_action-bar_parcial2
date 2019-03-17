@@ -11,16 +11,30 @@ import android.widget.Toast;
 
 public class DetalleActivity extends AppCompatActivity {
 
+    int itemPosition = -1;
+    String itemName = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle);
+
+        Bundle bn = getIntent().getExtras();
+
+        if(bn != null) {
+            itemPosition = bn.getInt("itemPosition",0);
+            itemName = bn.getString("itemName");
+            Toast.makeText(getApplicationContext(),"Item "+itemPosition+" es "+itemName,Toast.LENGTH_SHORT).show();
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
+
+        fragmento_3 detallePostre = new fragmento_3();
+
     }
 
     @Override

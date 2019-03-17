@@ -7,6 +7,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 
@@ -19,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
+
+        ListView lvItems = (ListView) findViewById(R.id.lvItems);
+
+        fragmento_2 listaPostres = new fragmento_2();
+
+
+
     }
 
     @Override
