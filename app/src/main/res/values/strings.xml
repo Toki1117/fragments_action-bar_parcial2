@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Parcial2_Salguero_25_0647_2014</string>
+    <string name="settings">Settings</string>
+    <string name="mis_datos">Mis datos</string>
+    <string name="salir">Salir</string>
+    <string name="favorito">Favorito</string>
+    <string name="aprobar">Más</string>
+    <string-array name="postres">
+        <item>Tiramisú</item>
+        <item>Postre pavlova</item>
+        <item>Macarons</item>
+        <item>Torta negra del diablo</item>
+        <item>Flan</item>
+        <item>Cheesecake </item>
+        <item>Brownies con helado</item>
+        <item>Gula Melaka</item>
+        <item>Isla flotante</item>
+        <item>Pastel de Belém</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item>Tan deliciosos como popular, el tiramisú el postre más característico de Italia (proveniente de la Toscana). Es un postre liviano y fresco, desde su forma tradicional con café se han creado otras variantes como el tiramisú de chocolate e incluso de limón. </item>
+        <item>Este postre, además de ser increíblemente delicioso, tiene una historia muy particular, pues el origen del mismo es aún algo incierto. Lo que sí podemos afirmar es que la combinación del merengue con los frutos rojos del postre pavlova es un éxito asegurado que no puedes dejar de intentar. </item>
+        <item>Estos coloridos y simpáticos bocaditos dulces hacen el postre perfecto para cualquier comida. Se elabora con clara de huevo, almendra molida, azúcar glas y azúcar. Estos postres se realizan en una amplia variedad de sabores según la época del año y la zona. Los macarons son particularmente conocidos por la gran gama de colores en la que se realizan. </item>
+        <item>Una de las recetas más famosas y, sin dudas, la más rica de tortas de chocolate. La torta negra del diablo es muy sencilla de realizar y su sabor es muy intenso, permitiendo sentir en todo el paladar el chocolate. Una combinación excelsa es el relleno tanto de dulce de leche como de mermelada de fresa para la torta, sencillamente espectacular.</item>
+        <item>El flan, también conocido como leche asada, es uno de los favoritos de todas las familias, pues a grandes y chicos les encanta, con dulce de leche o con caramelo el flan es un postre ideal para cualquier ocasión, sin dudas, cualquiera de las dos opciones será mejor que la de sus inicios en el imperio romano donde se solía espolvorear con pimienta, por suerte más tarde se sustituyó por azúcar.</item>
+        <item>El cheesecake es uno de los postres característicos de la cocina estadounidense (a pesar de su origen europeo). Si bien el cheesecake es el más popular, creo que el más delicioso es el cheesecake de fresas, pues brinda una dimensión más profunda de sabor. Es uno de los postres que nadie puede dejar de degustar. </item>
+        <item>Imagina que acabas de comer un delicioso plato en el almuerzo, ahora el mesero sirve en tu mesa un plato con una porción de brownie acompañada con una bola de helado de vainilla típico de Florencia, pues no sé a tí, pero a mí se me ha hecho agua la boca. Los brownies son pequeños pasteles de chocolate con nueces picadas y van de maravilla con un buen helado. </item>
+        <item>Elaborada con azúcar de palmera y leche de coco, el Gula Melaka es un postre que tienes que probar cuando estés en Malasia o un restaurante de la gastronomía típica de dicho país. Es un postre liviano y muy dulce, perfecto para el verano. </item>
+        <item>La isla flotante es un postre hecho a base de merengue blando y esponjoso con la forma de una torta, este merengue se sirve acompañado de salsa sambayón (zabaglione). Dulce pero no empalagoso, es un postre fácil de realizar y perfecto para cualquier ocasión.</item>
+        <item>Este pastel se realiza con una pasta de hojaldre y crema de yema de huevo leche y azúcar, aunque su receta se ha mantenido en secreto durante años y se estima que sólo tres personas en todo el mundo conocen la auténtica preparación. Es una receta típica de la cocina portuguesa y se puede servir tanto fría como caliente. </item>
+    </string-array>
+</resources>

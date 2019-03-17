@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="?attr/actionModeSelectAllDrawable"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="5"></item>
+
+    <item
+        android:id="@+id/action_exit"
+        android:icon="@android:drawable/ic_delete"
+        android:title="@string/salir"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"></item>
+
+    <item
+        android:id="@+id/action_datos"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/mis_datos"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"></item>
+
+    <item
+        android:id="@+id/action_1"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="@string/favorito"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="3"></item>
+
+    <item
+        android:id="@+id/action_2"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/aprobar"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="4"></item>
+
+</menu>
