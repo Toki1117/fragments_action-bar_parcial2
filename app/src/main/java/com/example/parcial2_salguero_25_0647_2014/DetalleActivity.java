@@ -1,5 +1,6 @@
 package com.example.parcial2_salguero_25_0647_2014;
 
+import android.content.res.Resources;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ public class DetalleActivity extends AppCompatActivity {
 
     int itemPosition = -1;
     String itemName = "";
+    String itemDetail = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +23,18 @@ public class DetalleActivity extends AppCompatActivity {
 
         Bundle bn = getIntent().getExtras();
 
+        fragmento_3 dessertDetail = new fragmento_3();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment3, dessertDetail)
+                .commit();
+
         if(bn != null) {
             itemPosition = bn.getInt("itemPosition",0);
             itemName = bn.getString("itemName");
-            Toast.makeText(getApplicationContext(),"Item "+itemPosition+" es "+itemName,Toast.LENGTH_SHORT).show();
+            //itemDetail = Resources.getSystem().getStringArray(R.array.descriptions)[itemPosition];
+            bn.putString("itemDetail",itemDetail);
+            dessertDetail.setArguments(bn);
+            Toast.makeText(getApplicationContext(),"Item "+itemPosition+" es "+itemName+" "+itemDetail,Toast.LENGTH_SHORT).show();
         }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
@@ -32,8 +42,6 @@ public class DetalleActivity extends AppCompatActivity {
 
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
-
-        fragmento_3 detallePostre = new fragmento_3();
 
     }
 

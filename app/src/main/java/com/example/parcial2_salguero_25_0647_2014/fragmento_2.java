@@ -1,5 +1,6 @@
 package com.example.parcial2_salguero_25_0647_2014;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
