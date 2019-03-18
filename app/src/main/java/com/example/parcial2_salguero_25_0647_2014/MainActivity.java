@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_exit:
                 finish();
-                moveTaskToBack(true);
                 break;
             case R.id.action_datos:
                 Toast.makeText(getApplicationContext(),"Diana Marecela Salguero Quezada 25-0647-2014",Toast.LENGTH_LONG).show();
