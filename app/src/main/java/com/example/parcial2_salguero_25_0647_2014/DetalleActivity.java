@@ -31,10 +31,9 @@ public class DetalleActivity extends AppCompatActivity {
         if(bn != null) {
             itemPosition = bn.getInt("itemPosition",0);
             itemName = bn.getString("itemName");
-            //itemDetail = Resources.getSystem().getStringArray(R.array.descriptions)[itemPosition];
+            itemDetail = getApplicationContext().getResources().getStringArray(R.array.descriptions)[itemPosition];
             bn.putString("itemDetail",itemDetail);
             dessertDetail.setArguments(bn);
-            Toast.makeText(getApplicationContext(),"Item "+itemPosition+" es "+itemName+" "+itemDetail,Toast.LENGTH_SHORT).show();
         }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);

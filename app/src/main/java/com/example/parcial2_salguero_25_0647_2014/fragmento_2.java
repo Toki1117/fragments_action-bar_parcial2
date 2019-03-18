@@ -23,7 +23,7 @@ public class fragmento_2 extends Fragment {
 
         lvPostres.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView parent, View v, int position, long id) {
-                Toast.makeText(requireContext(),"Item "+position+" : "+lvPostres.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
+                Toast.makeText(requireContext(), lvPostres.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(requireContext(),DetalleActivity.class);
                 intent.putExtra("itemPosition",position);
                 intent.putExtra("itemName",lvPostres.getItemAtPosition(position).toString());

@@ -30,7 +30,7 @@ public class fragmento_3 extends Fragment {
             itemPosition = bn.getInt("itemPosition", -1);
             itemName = bn.getString("itemName");
             Log.i("**BUNDLE**", "bn not null: "+itemName+" "+itemPosition);
-            tvItem.setText("Postre "+itemPosition+" : "+itemName);
+            tvItem.setText("Postre "+(itemPosition+1)+" : "+itemName);
             tvDescripcion.setText(itemDetail);
         } else {
             Log.i("**BUNDLE**", "bn null");
