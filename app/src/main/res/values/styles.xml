@@ -19,4 +19,12 @@
         <item name="android:dropDownVerticalOffset">4dp</item>
     </style>
 
+    <style name="ListViewDesserts" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:listSelector">@color/colorPrimaryDark</item>
+        <item name="android:listPreferredItemPaddingRight">10dip</item>
+        <item name="android:listPreferredItemPaddingLeft">10dip</item>
+        <item name="android:textSize">18dip</item>
+    </style>
+
 </resources>

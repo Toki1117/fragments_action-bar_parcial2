@@ -1,5 +1,6 @@
 package com.example.parcial2_salguero_25_0647_2014;
 
+import android.content.res.Resources;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,16 +12,36 @@ import android.widget.Toast;
 
 public class DetalleActivity extends AppCompatActivity {
 
+    int itemPosition = -1;
+    String itemName = "";
+    String itemDetail = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle);
+
+        Bundle bn = getIntent().getExtras();
+
+        fragmento_3 dessertDetail = new fragmento_3();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment3, dessertDetail)
+                .commit();
+
+        if(bn != null) {
+            itemPosition = bn.getInt("itemPosition",0);
+            itemName = bn.getString("itemName");
+            itemDetail = getApplicationContext().getResources().getStringArray(R.array.descriptions)[itemPosition];
+            bn.putString("itemDetail",itemDetail);
+            dessertDetail.setArguments(bn);
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override

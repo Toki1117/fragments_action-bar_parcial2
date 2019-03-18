@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#8BC34A</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#EDECE0</color>
+    <color name="colorPrimaryDark">#ED8188</color>
+    <color name="colorAccent">#91514D</color>
+    <color name="colorFragment1">#8FB48C</color>
+    <color name="colorFragment2">#D7AA89</color>
+    <color name="colorFragment3">#AC814B</color>
+
 
 </resources>

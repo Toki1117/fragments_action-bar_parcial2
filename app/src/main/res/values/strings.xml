@@ -5,6 +5,7 @@
     <string name="salir">Salir</string>
     <string name="favorito">Favorito</string>
     <string name="aprobar">Más</string>
+    <string name="listTitle">Lista de los 10 postres más deliciosos</string>
     <string-array name="postres">
         <item>Tiramisú</item>
         <item>Postre pavlova</item>

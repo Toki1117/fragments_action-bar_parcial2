@@ -1,6 +1,5 @@
 package com.example.parcial2_salguero_25_0647_2014;
 
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
+
     }
 
     @Override
@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_exit:
                 finish();
-                moveTaskToBack(true);
                 break;
             case R.id.action_datos:
                 Toast.makeText(getApplicationContext(),"Diana Marecela Salguero Quezada 25-0647-2014",Toast.LENGTH_LONG).show();
